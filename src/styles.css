@@ -1,0 +1,10 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+button:hover {
+  background: yellow;
+}
+body {
+  background-color: rgb(136, 143, 125);
+}
