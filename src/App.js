@@ -3,45 +3,45 @@ import "./styles.css";
 import { useState } from "react";
 
 const bookList = {
-  Polity: [
+  Physics: [
     {
-      name: "Laxmikanth",
-      rating: "4.8/5",
+      name: "Xam idea",
+      rating: "4.1/5",
       description:
-        "This book contains all the topics and writen in very simple language."
+        "This book contains all the topics given by the cbse as syllabus. in this, you can study topicwise."
     },
     {
       name: "NCERT",
-      rating: "2.2/5",
+      rating: "4.0/5",
       description:
-        "Ncert are important as they build the Foundation and Concepts"
+        "Ncert are important as they build the Foundation and Concepts. but for deep study you need to purchase another book for more clarity"
     },
     {
-      name: "ARC",
-      rating: "3.2/5",
+      name: "Concept of physics",
+      rating: "4.2/5",
       description:
-        "Administrative Reforms Commission Report are important to know some topic."
+        "this book contain all important topics with complete syllabus. you can also solve previous paper questions."
     }
   ],
 
-  Economy: [
+  Chemistry: [
     {
       name: "NCERT",
       rating: "3.5/5",
       description:
-        "Ncert are important as they build the Foundation and Concepts"
+        "Ncert are important as they build the Foundation and Concepts. but for deep study you need to purchase another book for more clarity"
     },
     {
-      name: "Newspaper/Current Issues",
+      name: "Pradeep' chemistry",
       rating: "4.5/5",
       description:
-        "It will update you with current issues of RBI, Monetory Policy etc"
+        "This book contains all the topics given by the cbse as syllabus. in this, you can study topicwise."
     },
     {
-      name: "Economic Survey",
+      name: "Modern's ABC of chemistry",
       rating: "4.5/5",
       description:
-        "It will give you a summarize policy of Govt followed in last year."
+        "this book contain all important topics with complete syllabus. you can also solve previous paper questions."
     }
   ],
   History: [
@@ -49,7 +49,7 @@ const bookList = {
       name: "NCERT",
       rating: "3.5/5",
       description:
-        "Ncert are important as they build the Foundation and Concepts"
+        "Ncert are important as they build the Foundation and Concepts. but for deep study you need to purchase another book for more clarity"
     },
     {
       name: "Spectrum",
@@ -58,10 +58,10 @@ const bookList = {
         "This book contains all the topics of Modern India and writen in very simple language."
     },
     {
-      name: "Tamil Board Ncert class 11",
+      name: "India After Gandhi by Ramachandra Guha",
       rating: "4.5/5",
       description:
-        "This book contains all the topics of Ancient India and writen in very simple language."
+        "This book contains about India after indpendence. it is writen in very simple language."
     }
   ]
 };
