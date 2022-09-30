@@ -12,7 +12,7 @@ const bookList = {
     },
     {
       name: "NCERT",
-      rating: "4.2/5",
+      rating: "4.0/5",
       description:
         "Ncert are important as they build the Foundation and Concepts. but for deep study you need to purchase another book for more clarity"
     },
@@ -73,30 +73,38 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1 style={{ fontFamily: "cursive" }}> 📚📚 mygoodbooks list </h1>
+      <h1>
+        {" "}
+        <span>📚📚</span> Mygoodbooks list{" "}
+      </h1>
       <p style={{ fontSize: "medium" }}>
         {" "}
         Check out my favorite book list genre wise with ratings on 5 scale{" "}
       </p>
 
       <div>
-        {Object.keys(bookList).map((genre) => (
+        {Object.keys(bookList).map((genre, id) => (
           <button
             onClick={() => genreClickHandler(genre)}
             style={{
               cursor: "pointer",
-              background: "#E5E7EB",
-              borderRadius: "0.3rem",
-              border: "3px solid black",
-              padding: "0.5rem  1rem",
+              background: "darkcyan",
+              border: "none",
+              color: "white",
+              fontSize: "large",
+              boxShadow: "0px 0px 10px grey",
+              padding: "10px  12px",
               margin: "1rem 0.5rem"
             }}
+            key={id}
           >
             {genre}
           </button>
         ))}
       </div>
-      <hr />
+      <hr
+        style={{ height: "2px", backgroundColor: "red", margin: "3rem auto" }}
+      />
       <div style={{ textAlign: "left" }}>
         <ul style={{ paddingInlineStart: "0" }}>
           {bookList[selectedGenre].map((book) => (
@@ -105,16 +113,20 @@ export default function App() {
               style={{
                 listStyle: "none",
                 padding: "1rem",
-                border: "3px solid black",
-                width: "70%",
-                margin: "1rem 9rem",
-                borderRadius: "0.5rem"
+                width: "50%",
+                margin: "1rem auto",
+                borderRadius: "0.5rem",
+                boxShadow: "0px 0px 10px black",
+                background: "rgb(208, 207, 186)",
+                display: "flex",
+                flexDirection: "column",
+                gap: "1rem"
               }}
             >
               {" "}
-              <div style={{ fontSize: "larger" }}> {book.name} </div>
-              <div style={{ fontSize: "smaller" }}> {book.rating} </div>
-              <div style={{ fontSize: "smaller" }}> {book.description} </div>
+              <div className="book-name"> {book.name} </div>
+              <div className="book-rating"> {book.rating} </div>
+              <div className="book-desc"> {book.description} </div>
             </li>
           ))}
         </ul>

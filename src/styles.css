@@ -6,5 +6,14 @@ button:hover {
   background: yellow;
 }
 body {
-  background-color: rgb(136, 143, 125);
+  background-color: rgb(212, 230, 185);
+}
+.book-name {
+  font-size: x-large;
+}
+.book-rating {
+  font-weight: bold;
+}
+.book-desc {
+  color: rgb(73, 72, 72);
 }
