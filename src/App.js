@@ -12,7 +12,7 @@ const bookList = {
     },
     {
       name: "NCERT",
-      rating: "4.0/5",
+      rating: "4.2/5",
       description:
         "Ncert are important as they build the Foundation and Concepts. but for deep study you need to purchase another book for more clarity"
     },
